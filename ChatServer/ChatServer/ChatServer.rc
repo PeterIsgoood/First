@@ -1,0 +1,343 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\ChatServer.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ChatServer.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ChatServer 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "ChatServer, 버전 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "확인",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_CHATSERVER_DIALOG DIALOGEX 0, 0, 967, 585
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "N"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "취소",IDCANCEL,910,564,50,14
+    LISTBOX         IDC_List,275,6,72,244,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "장비시간 :",IDC_STATIC,7,9,30,8
+    LTEXT           "Time",IDC_StaticTime,46,9,62,8
+    LTEXT           "1Port(PoE1) :",IDC_STATIC,7,38,52,8
+    LTEXT           "2Port(PoE2) :",IDC_STATIC,7,52,48,8
+    LTEXT           "3Port(PoE3) :",IDC_STATIC,7,65,48,8
+    LTEXT           "4Port(PoE4) :",IDC_STATIC,7,79,49,8
+    LTEXT           "5Port(일반)   :",IDC_STATIC,7,92,47,8
+    LTEXT           "6Port(광)  :",IDC_STATIC,7,106,53,8
+    LTEXT           "TX",IDC_STATIC,97,22,15,8
+    LTEXT           "RX",IDC_STATIC,185,22,15,8
+    LTEXT           "PORT",IDC_STATIC,7,24,27,8
+    LTEXT           "-------------------------------------------------------------------------------------------------------------------",IDC_STATIC,7,31,260,8
+    LTEXT           "PortNum 1_tx",IDC_Traffic_Port1_Tx,57,39,62,8,0,WS_EX_RIGHT
+    LTEXT           "PortNum 1_Rx",IDC_Traffic_Port1_Rx,143,39,62,8,0,WS_EX_RIGHT
+    LTEXT           "PortNum 3_tx",IDC_Traffic_Port3_Tx,58,66,62,8,0,WS_EX_RIGHT
+    LTEXT           "PortNum 4_tx",IDC_Traffic_Port4_Tx,57,80,62,8,0,WS_EX_RIGHT
+    LTEXT           "PortNum 5_tx",IDC_Traffic_Port5_Tx,58,93,62,8,0,WS_EX_RIGHT
+    LTEXT           "PortNum 6_tx",IDC_Traffic_Port6_Tx,58,107,62,8,0,WS_EX_RIGHT
+    LTEXT           "PortNum 2_tx",IDC_Traffic_Port2_Tx,57,52,62,8,0,WS_EX_RIGHT
+    DEFPUSHBUTTON   "확인",IDOK,855,564,50,14
+    LTEXT           "PortNum 2_Rx",IDC_Traffic_Port2_Rx,143,51,62,8,0,WS_EX_RIGHT
+    LTEXT           "PortNum 3_Rx",IDC_Traffic_Port3_Rx,143,64,62,8,0,WS_EX_RIGHT
+    LTEXT           "PortNum 4_Rx",IDC_Traffic_Port4_Rx,142,78,62,8,0,WS_EX_RIGHT
+    LTEXT           "PortNum 5_Rx",IDC_Traffic_Port5_Rx,143,92,62,8,0,WS_EX_RIGHT
+    LTEXT           "PortNum 6_Rx",IDC_Traffic_Port6_Rx,143,106,62,8,0,WS_EX_RIGHT
+    LTEXT           "-------------------------------------------------------------------------------------------------------------------",IDC_STATIC,7,121,260,8
+    LTEXT           "IP",IDC_STATIC,7,130,53,8
+    LTEXT           "TX",IDC_STATIC,155,130,15,8
+    LTEXT           "RX",IDC_STATIC,236,131,15,8
+    LTEXT           "255.255.255.255",IDC_IP1,7,145,61,8
+    LTEXT           "PortNum 6_tx",IDC_IP1_TX,131,145,58,8,0,WS_EX_RIGHT
+    LTEXT           "PortNum 6_Rx",IDC_IP1_RX,202,145,62,8,0,WS_EX_RIGHT
+    LTEXT           "PortNum",IDC_STATIC,87,130,31,8
+    LTEXT           "0",IDC_IP1_NUM,97,145,14,8
+    LTEXT           "255.255.255.255",IDC_IP2,7,159,61,8
+    LTEXT           "0",IDC_IP2_TX,131,159,58,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP2_RX,202,159,62,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP2_NUM,97,159,14,8
+    LTEXT           "255.255.255.255",IDC_IP3,7,173,61,8
+    LTEXT           "0",IDC_IP3_TX,131,173,58,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP3_RX,202,173,62,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP3_NUM,97,173,14,8
+    LTEXT           "255.255.255.255",IDC_IP4,7,187,61,8
+    LTEXT           "0",IDC_IP4_TX,131,187,58,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP4_RX,202,187,62,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP4_NUM,97,187,14,8
+    LTEXT           "0.0.0.0",IDC_IP5,7,201,61,8
+    LTEXT           "0",IDC_IP5_TX,131,201,58,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP5_RX,202,201,62,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP5_NUM,97,201,14,8
+    LTEXT           "0.0.0.0",IDC_IP6,7,215,61,8
+    LTEXT           "0",IDC_IP6_TX,131,215,58,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP6_RX,202,215,62,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP6_NUM,97,215,14,8
+    LTEXT           "0.0.0.0",IDC_IP7,7,229,61,8
+    LTEXT           "0",IDC_IP7_TX,131,229,58,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP7_RX,202,229,62,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP7_NUM,97,229,14,8
+    LTEXT           "0.0.0.0",IDC_IP8,7,243,61,8
+    LTEXT           "0",IDC_IP8_TX,131,243,58,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP8_RX,202,243,62,8,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_IP8_NUM,97,243,14,8
+    LISTBOX         IDC_List2,352,6,608,87,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "SAVE",IDC_Save_Btn,787,564,50,14
+    LTEXT           "상황",IDC_STATIC,91,271,23,8
+    LTEXT           "시간",IDC_STATIC,7,271,55,8
+    LTEXT           "차이값",IDC_STATIC,179,272,23,8
+    LTEXT           "time",IDC_time1,650,437,47,8,NOT WS_VISIBLE
+    CTEXT           "situ",IDC_situ1,702,438,56,9,NOT WS_VISIBLE
+    LTEXT           "avr1",IDC_avr1,782,436,37,8,NOT WS_VISIBLE
+    LTEXT           "Exavr1",IDC_exAvr1,846,435,54,8,NOT WS_VISIBLE
+    LTEXT           "Interval",IDC_interval1,926,434,24,8,NOT WS_VISIBLE
+    LTEXT           "time",IDC_time2,650,453,50,8,NOT WS_VISIBLE
+    CTEXT           "situ",IDC_situ2,706,454,47,9,NOT WS_VISIBLE
+    LTEXT           "avr1",IDC_avr2,782,452,42,8,NOT WS_VISIBLE
+    LTEXT           "Exavr1",IDC_exAvr2,846,451,22,8,NOT WS_VISIBLE
+    LTEXT           "Interval",IDC_interval2,926,450,24,8,NOT WS_VISIBLE
+    LTEXT           "time",IDC_time3,650,469,45,8,NOT WS_VISIBLE
+    CTEXT           "situ",IDC_situ3,702,467,51,9,NOT WS_VISIBLE
+    LTEXT           "avr1",IDC_avr3,782,468,40,8,NOT WS_VISIBLE
+    LTEXT           "Exavr1",IDC_exAvr3,846,467,22,8,NOT WS_VISIBLE
+    LTEXT           "Interval",IDC_interval3,926,466,24,8,NOT WS_VISIBLE
+    LTEXT           "time",IDC_time4,329,436,15,8,NOT WS_VISIBLE
+    LTEXT           "situ",IDC_situ4,396,436,19,9,NOT WS_VISIBLE
+    LTEXT           "avr1",IDC_avr4,460,435,14,8,NOT WS_VISIBLE
+    LTEXT           "Exavr1",IDC_exAvr4,526,434,22,8,NOT WS_VISIBLE
+    LTEXT           "Interval",IDC_interval4,604,433,24,8,NOT WS_VISIBLE
+    LTEXT           "time",IDC_time5,329,453,15,8,NOT WS_VISIBLE
+    LTEXT           "situ",IDC_situ5,396,569,19,9,NOT WS_VISIBLE
+    LTEXT           "avr1",IDC_avr5,460,570,14,8,NOT WS_VISIBLE
+    LTEXT           "Exavr1",IDC_exAvr5,524,570,22,8,NOT WS_VISIBLE
+    LTEXT           "Interval",IDC_interval5,605,570,24,8,NOT WS_VISIBLE
+    LISTBOX         IDC_List3,7,281,112,149,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "상황변화율 : ± 10,000",IDC_STATIC,7,434,83,8
+    LTEXT           "평균통신량폭 : 30,000",IDC_STATIC,7,446,83,8
+    LTEXT           "이벤트 변화값 : 30,000",IDC_STATIC,7,460,83,8
+    PUSHBUTTON      "Save",IDC_BUTTON2,268,564,50,14
+    LISTBOX         IDC_LIST3_1,354,98,102,383,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST3_2,465,98,102,383,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST3_3,575,98,102,381,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST3_4,685,98,102,379,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST3_5,794,98,102,380,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST5,155,281,191,210,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_max4,684,488,101,69,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_max1,355,488,101,75,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_max2,465,488,101,72,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_max5,792,487,101,70,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_max3,575,489,101,70,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,198,155,50,14
+    PUSHBUTTON      "취소",IDCANCEL,252,155,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ChatServer.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "ChatServer.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_CHATSERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 960
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 578
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_CHATSERVER_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "ChatServer 정보(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 소켓을 초기화하지 못했습니다."
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\ChatServer.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
